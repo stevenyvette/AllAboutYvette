@@ -1,0 +1,2173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='zh-CN' xml:lang='zh-CN' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Beauty & Beast</title>
+	<link rel="stylesheet" type="text/css" href="css/reset_y.css">
+	<style>
+	body {
+		font-family: 微软雅黑, Verdana, sans-serif, 宋体;
+		color: #fff;
+		background: #fff;
+		background-size: 110% 110%;
+		-webkit-transition: all 1s ease-in;
+		-moz-transition:    all 1s ease-in;
+		-ms-transition:     all 1s ease-in;
+		-o-transition:      all 1s ease-in;
+		transition:         all 1s ease-in;
+		_background:#fff url(images/bg01.jpg) no-repeat;
+		_background-attachment:fixed;
+	}
+	body.impress-not-supported {
+		line-height: 200%;
+		font-size: 18px;
+	}
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	a {
+		color: inherit;
+		text-decoration: none;
+		padding: 0 0.1em;
+		text-shadow: 1px 1px 5px rgba(100, 100, 100, 0.5);
+		border-radius: 0.2em;
+		-webkit-transition: 0.5s;
+		-moz-transition:    0.5s;
+		-ms-transition:     0.5s;
+		-o-transition:      0.5s;
+		transition:         0.5s;
+	}
+	a:hover, a:focus {
+		text-shadow: 1px 1px 5px rgba(100, 100, 100, 0.2);
+	}
+	.mt10 {
+		margin-top: 10px;
+	}
+	.opacity7 {
+		opacity: 0.85;
+	}
+	.opacity9 {
+		opacity: 0.9;
+	}
+	.rotate45 {
+		-webkit-transform: rotate(720deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transition: rotate(360deg);
+		-webkit-transition: all 0.2s ease-in;
+		-moz-transition:    all 0.2s ease-in;
+		-ms-transition:     all 0.2s ease-in;
+		-o-transition:      all 0.2s ease-in;
+		transition:         all 0.2s ease-in;
+	}
+	.step {
+		position: relative;
+		width: 900px;
+		padding: 40px;
+		margin: 20px auto;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing:    border-box;
+		-ms-box-sizing:     border-box;
+		-o-box-sizing:      border-box;
+		box-sizing:         border-box;
+		font-size: 48px;
+		line-height: 1.5;
+		cursor: pointer;
+	}
+	.impress-not-supported .step {
+		font-size: 18px
+	}
+	.impress-enabled .step {
+		margin: 0;
+		-webkit-transition: opacity 1s;
+		-moz-transition:    opacity 1s;
+		-ms-transition:     opacity 1s;
+		-o-transition:      opacity 1s;
+		transition:         opacity 1s;
+	}
+	.impress-enabled .step.active {
+		opacity: 1;
+	}
+	/*  header   */
+	header {
+		background:transparent;
+	filter:
+	progid:DXImageTransform.Microsoft.gradient(startColorstr=#51ffffff, endColorstr=#51ffffff);
+		background-color: rgba(255, 255, 255, 0.2);
+		_background-color:#f3f3f3;
+		padding: 10px 0;
+		top: 0;
+		left: 0;
+		width:100%;
+		z-index: 100;
+	}
+	.top h1 {
+		width: 1000px;
+		margin: 0 auto;
+		font-size: 28px;
+		-webkit-transition: all 1s ease-in-out 0.5s;
+		-moz-transition:    all 1s ease-in-out 0.5s;
+		-ms-transition:     all 1s ease-in-out 0.5s;
+		-o-transition:      all 1s ease-in-out 0.5s;
+		transition:         all 1s ease-in-out 0.5s;
+	}
+	.top h1 a {
+		display: inline-block;
+	}
+	.top h1 img {
+		display: inline-block;
+		zoom: 1;
+		width: 160px;
+		height: 47px;
+		border-right: 1px solid rgba(255, 255, 255, .1);
+		margin-right: 10px;
+		padding-right: 10px;
+	}
+	.top h1 em {
+		vertical-align: top;
+		display: inline-block;
+		color: #40AA53;
+		line-height: 48px;
+		font-style: normal;
+		-webkit-transition: all 1s ease-in-out 0.5s;
+		-moz-transition:    all 1s ease-in-out 0.5s;
+		-ms-transition:     all 1s ease-in-out 0.5s;
+		-o-transition:      all 1s ease-in-out 0.5s;
+		transition:         all 1s ease-in-out 0.5s;
+	}
+	/*   bg    */
+	.impress-supported .bg {
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -100;
+		background:#fff url(images/bg04.jpg) no-repeat;
+		-webkit-transition: all 0.5s ease-in;
+		-moz-transition:    all 0.5s ease-in;
+		-ms-transition:     all 0.5s ease-in;
+		-o-transition:      all 0.5s ease-in;
+		transition:         all 0.5s ease-in;
+	}
+	.impress-not-supported .bg {
+		background: #333;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -100;
+		-webkit-transition: all 0.5s ease-in;
+		-moz-transition:    all 0.5s ease-in;
+		-ms-transition:     all 0.5s ease-in;
+		-o-transition:      all 0.5s ease-in;
+		transition:         all 0.5s ease-in;
+		_display: none;
+	}
+	.impress-not-supported .bg img {
+		height:1200px;
+	}
+	.impress-supported .bg img {
+		-webkit-transition: all 0.5s ease-in;
+		-moz-transition:    all 0.5s ease-in;
+		-ms-transition:     all 0.5s ease-in;
+		-o-transition:      all 0.5s ease-in;
+		transition:         all 0.5s ease-in;
+	}
+	/*    timeline   */
+	.impress-supported .timeline {
+		position: absolute;
+		bottom: 20%;
+		left: 0;
+		width: 100%;
+		padding: 0 100px;
+		font-size: 18px;
+		-webkit-transition: all 1s ease-in-out 1.5s;
+		-moz-transition:    all 1s ease-in-out 0.5s;
+		-ms-transition:     all 1s ease-in-out 0.5s;
+		-o-transition:      all 1s ease-in-out 0.5s;
+		transition:         all 1s ease-in-out 0.5s;
+	}
+	.impress-not-supported .timeline {
+		margin-top: 30px;
+	}
+	.impress-supported .line_white {
+		height: 5px;
+		width: 100%;
+		background: rgba(255, 255, 255, .2);
+		position: absolute;
+		bottom: 50%;
+		left: 0;
+		z-index: -10;
+	}
+	/*    timeList_item   */
+	.impress-supported .timeList_item {
+		position:relative;
+		float: left;
+	}
+	.impress-not-supported .timeList_item {
+		background:transparent;
+	filter:
+	progid:DXImageTransform.Microsoft.gradient(startColorstr=#51000000, endColorstr=#51000000);
+		background: rgba(0, 0, 0, .2);
+	 _filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0 );
+		_background-color:#333;
+		padding: 30px;
+		border-radius: 10px;
+	}
+	.impress-supported .present {
+		margin-top: -20px;
+		-webkit-transition: all 0.5s ease-in;
+		-moz-transition:    all 0.5s ease-in;
+		-ms-transition:     all 0.5s ease-in;
+		-o-transition:      all 0.5s ease-in;
+		transition:         all 0.5s ease-in;
+	}
+	.impress-supported .circle {
+		margin-right: 100px;
+		width:64px;
+		height: 64px;
+		background-color: rgba(0, 0, 0, 0.9);
+		border-radius: 50%;
+		border: 5px solid rgba(255, 255, 255, 0.8);
+		font-size: 20px;
+		color: #fff;
+		text-align: center;
+		line-height: 64px;
+		cursor: pointer;
+		-webkit-transition: all 0.5s ease-in;
+		-moz-transition:    all 0.5s ease-in;
+		-ms-transition:     all 0.5s ease-in;
+		-o-transition:      all 0.5s ease-in;
+		transition:         all 0.5s ease-in;
+	}
+	.impress-supported .present .circle {
+		width:90px;
+		height: 90px;
+		background-color: rgba(235, 0, 0, 0.9);
+		line-height:90px;
+		font-size: 24px;
+		-webkit-transition: all 0.5s ease-in;
+		-moz-transition:    all 0.5s ease-in;
+		-ms-transition:     all 0.5s ease-in;
+		-o-transition:      all 0.5s ease-in;
+		transition:         all 0.5s ease-in;
+		border: none;
+	}
+	.impress-not-supported .circle {
+		font-size: 48px;
+	}
+	.impress-supported .timeList_item_title {
+		width: 150px;
+		position: absolute;
+		top: 158px;
+		left: -84px;
+		-webkit-transform:rotate(-45deg);
+		-moz-transform:rotate(-45deg);
+		-ms-transform:rotate(-45deg);
+		-o-transform:rotate(-45deg);
+		transform:rotate(-45deg);
+		text-align: right;
+		font-size: 14px;
+		letter-spacing: 1px;
+		-webkit-transition: all 1s ease-in-out 0.5s;
+		-moz-transition:    all 1s ease-in-out 0.5s;
+		-ms-transition:     all 1s ease-in-out 0.5s;
+		-o-transition:      all 1s ease-in-out 0.5s;
+		transition:         all 1s ease-in-out 0.5s;
+	}
+	.impress-not-supported .timeList_item_title {
+		font-size: 24px;
+		line-height: 200%;
+		color: #ff9900;
+		font-size: 30px;
+	}
+	.impress-supported .present .timeList_item_title {
+		width: 500px;
+		top: -10px;
+		left: 280px;
+		line-height: 100%;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+		font-size: 24px;
+		color: #fff;
+		text-align: center;
+		margin-left: -50%;
+		text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+		-webkit-transition: all 0.5s ease-in;
+		-moz-transition:    all 0.5s ease-in;
+		-ms-transition:     all 0.5s ease-in;
+		-o-transition:      all 0.5s ease-in;
+		transition:         all 0.5s ease-in;
+	}
+	.impress-supported .year2014, .impress-supported .year2015, .impress-supported .year2016{
+		position: absolute;
+		top: -120px;
+		color: rgba(255, 255, 255, .5);
+		font-size: 120px;
+		color: #fff;
+	}
+	.impress-not-supported .year2014, .impress-not-supported .year2015, .impress-not-supported .year2016{
+		padding: 0;
+		width: 110px;
+		height: 38px;
+		line-height: 38px;
+		font-size: 24px;
+		background-color: #2f9dcc;
+		text-align: center;
+		border-radius: 5px;
+	}
+	.impress-not-supported .year {
+		padding: 0;
+	}
+	.impress-supported .list_show {
+		position: absolute;
+		top: -700px;
+		left: -130px;
+		width: 980px;
+		height: 400px;
+	}
+	.impress-supported .list_show img {
+		background: rgba(255, 255, 255, .2);
+		border-radius: 10px;
+		float: left;
+		margin-right: 30px;
+		position: absolute;
+		width: 500px;
+		height: auto;
+	}
+	.impress-enabled .step .list_show {
+		opacity: 0;
+		-webkit-transition: all 0.5s ease-in;
+		-moz-transition:    all 0.5s ease-in;
+		-ms-transition:     all 0.5s ease-in;
+		-o-transition:      all 0.5s ease-in;
+		transition:         all 0.5s ease-in;
+		-webkit-transform:scale(0.5);
+		-moz-transform:   scale(0.5);
+		-ms--transform:   scale(0.5);
+		-o--transform:    scale(0.5);
+		transform:        scale(0.5);
+		color: #fff;
+	}
+	.impress-enabled .step.active .list_show {
+		opacity: 1;
+		-webkit-transform:scale(1);
+		-moz-transform:   scale(1);
+		-ms--transform:   scale(1);
+		-o--transform:    scale(1);
+		transform:        scale(1);
+		-webkit-transition: all 1s ease-in-out 1s;
+		-moz-transition:    all 1s ease-in-out 1s;
+		-ms-transition:     all 1s ease-in-out 1s;
+		-o-transition:      all 1s ease-in-out 1s;
+		transition:         all 1s ease-in-out 1s;
+	}
+	.impress-supported .list_show h2 {
+		font-size: 46px;
+		color: #0087f1;
+		-webkit-transition: all 1s ease-in;
+		-moz-transition:    all 1s ease-in;
+		-ms-transition:     all 1s ease-in;
+		-o-transition:      all 1s ease-in;
+		transition:         all 1s ease-in;
+	}
+	.impress-not-supported .list_show h2 {
+		display: none;
+	}
+	.impress-supported .list_show p {
+		color: rgba(255, 255, 255, .8);
+		color: #fff;
+		font-size: 24px;
+		-webkit-transition: all 1s ease-in;
+		-moz-transition:    all 1s ease-in;
+		-ms-transition:     all 1s ease-in;
+		-o-transition:      all 1s ease-in;
+		transition:         all 1s ease-in;
+		margin-left: 530px;
+	}
+	/*  list_show布局  */
+	.impress-enabled .step.active .list_show img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		-webkit-transition: all 1s ease-in;
+		-moz-transition:    all 1s ease-in;
+		-ms-transition:     all 1s ease-in;
+		-o-transition:      all 1s ease-in;
+		transition:         all 1s ease-in;
+	}
+	.impress-enabled .step.active .list_show h2 {
+		position: absolute;
+		top: 0;
+		left: 530px;
+		margin: 0;
+		width: 460px;
+	}
+	.impress-enabled .step.active .list_show p {
+		position: absolute;
+		top: 90px;
+		left: 530px;
+		margin: 0;
+		text-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+	}
+	.impress-enabled .step.active .list_show p img {
+		padding: 5px;
+		background-color: #fff;
+		width: 460px;
+	}
+	.impress-enabled .step.active .show1 img {
+		left: auto;
+		right: 0;
+	}
+	.impress-enabled .step.active .show1 h2 {
+		left: 0;
+	}
+	.impress-enabled .step.active .show1 p {
+		top: 90px;
+		left: 0;
+	}
+	.impress-enabled .step.active .show2 img {
+		left: 0;
+		top: 90px;
+	}
+	.impress-enabled .step.active .show2 h2 {
+		left: 0;
+		top: 0;
+		width: auto;
+	}
+	.impress-enabled .step.active .show2 p {
+		top: 90px;
+		left: 530px;
+	}
+	.impress-enabled .step.active .show3 img {
+		left: 0;
+	}
+	.impress-enabled .step.active .show3 h2 {
+		left: 530px;
+		top: 0;
+	}
+	.impress-enabled .step.active .show3 p, .impress-enabled .step.active .show4 3 img {
+	 left: auto;
+	 right: 0;
+	 width: 460px;
+	}
+	.impress-enabled .step.active .show3 p {
+		top:90px;
+	}
+	.impress-enabled .step.active .show4 img {
+		left: auto;
+		right: 0;
+		width: 400px;
+	}
+	.impress-enabled .step.active .show4 h2 {
+		left: 0;
+		top: 0;
+	}
+	.impress-enabled .step.active .show4 p, .impress-enabled .step.active .show4 p img {
+		left: 0;
+	}
+	.impress-enabled .step.active .show4 p {
+		top:90px;
+	}
+	.impress-supported .list_show p img {
+		width: 460px;
+	}
+	.impress-enabled .step.active .show5 img {
+		left: auto;
+		right: 0;
+		width: 300px;
+		box-shadow: 5px 0 10px rgba(0, 0, 0, .2);
+	}
+	.impress-enabled .step.active .show5 h2 {
+		left: 0;
+		top: 0;
+	}
+	.impress-enabled .step.active .show5 p, .impress-enabled .step.active .show5 p img {
+		top: 40px;
+		left: 0;
+		width: 700px;
+	}
+	.impress-enabled .step.active .list_show p.m160, .impress-enabled .step.active .show1 p.m160, .impress-enabled .step.active .show2 p.m160, .impress-enabled .step.active .show3 p.m160, .impress-enabled .step.active .show4 p.m160, .impress-enabled .step.active .show5 p.m160 {
+		top: 160px;
+	}
+	.impress-enabled .step.active .list_show p.end {
+		top: 0;
+		left: 0;
+		font-size: 36px;
+	}
+	.gotop {
+		display: none;
+	}
+	.impress-supported .refresh img {
+		width: 160px;
+		height: 160px;
+		opacity: 0.8;
+		left: 290px;
+		top: 100px;
+		cursor: pointer;
+	}
+	.impress-not-supported .refresh {
+		display: none;
+	}
+	.impress-not-supported .gotop {
+		position: fixed;
+		width: 60px;
+		height: 60px;
+		right:120px;
+		bottom: 60px;
+	}
+	.impress-not-supported .gotop img {
+		background:transparent;
+	 filter:
+	progid:DXImageTransform.Microsoft.gradient(startColorstr=#51ffffff, endColorstr=#51ffffff);
+		background: rgba(255, 255, 255, .2);
+		border-radius: 10px;
+		padding: 10px;
+	}
+	/*    music   */
+	.music {
+		position: fixed;
+		top: 8px;
+		right: 40px;
+		width: 50px;
+		height:50px;
+		cursor:pointer;
+		font-size: 24px;
+	 font-weight：bold;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, .2);
+		-webkit-transition: all 0.2s ease-in;
+		-moz-transition:    all 0.2s ease-in;
+		-ms-transition:     all 0.2s ease-in;
+		-o-transition:      all 0.2s ease-in;
+		transition:         all 0.2s ease-in;
+	}
+	.triangle {
+		width:0;
+		height:0;
+		border-bottom:20px transparent solid;
+		border-top:12px transparent solid;
+		border-left:24px #333 solid;
+		border-left:24px rgba(0, 0, 0, .8) solid;
+		border-right:12px transparent solid;
+		position: absolute;
+		top: 10px;
+		left: 18px;
+	}
+	.pause {
+		width:8px;
+		height:25px;
+		background:#333;
+		background:rgba(0, 0, 0, .8);
+		float:left;
+		display: none;
+	}
+	.pause1 {
+		margin:12px 0px 0 13px;
+	}
+	.pause2 {
+		margin:12px 10px 0 8px;
+	}
+	 @media (max-height: 900px) {
+	 .impress-supported .list_show img {
+	 width: 400px;
+	}
+	.impress-enabled .step.active .list_show p img {
+	max-width: 300px;
+	}
+	.impress-enabled .step.active .show5 p, .impress-enabled .step.active .show5 p img {
+	max-width: 540px;
+	}
+	 .impress-supported .list_show p, .impress-supported .list_show h2 {
+	 margin-left: 420px;
+	}
+	 .impress-supported .list_show {
+	top: -410px;
+	}
+	.impress-enabled .step.active .list_show h2, .impress-enabled .step.active .list_show p {
+	 left: 430px;
+	}
+	.impress-enabled .step.active .show3 h2, .impress-enabled .step.active .show3 p {
+	left: 430px;
+	}
+	.impress-enabled .step.active .show4 h2, .impress-enabled .step.active .show4 p, .impress-enabled .step.active .show4 p img, .impress-enabled .step.active .list_show .show1 h2, .impress-enabled .step.active .list_show .show1 p {
+	 left: 0;
+	}
+	.impress-enabled .step.active .show1 h2, .impress-enabled .step.active .list_show .show1 p {
+	left: 0;
+	}
+	.impress-enabled .step.active .show1 p {
+	left: 0;
+	}
+	 .impress-enabled .step.active .show4 img, .impress-enabled .step.active .show1 img {
+	 left: 460px;
+	}
+	.impress-enabled .step.active .show5 h2, .impress-enabled .step.active .show5 p {
+	left: 0;
+	}
+	}
+	 @media (mix-height: 900px) {
+	 .impress-supported .list_show img {
+	 width: 500px;
+	}
+	 .impress-supported .list_show p, .impress-supported .list_show h2 {
+	 margin-left: 520px;
+	}
+	 .impress-supported .list_show {
+	top: -500px;
+	}
+	}
+	.impress-enabled .refresh .list_show img, .impress-enabled .step.active.refresh .list_show img {
+		width: 160px;
+		left: 250px;
+		top: 100px;
+	}
+	</style>
+	<script id="jquery_183" type="text/javascript" class="library" src="js/jquery-1.8.3.min.js"></script>
+	<script> 
+	   (function() {
+	     if (! 
+	     /*@cc_on!@*/
+	     0) return;
+	     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+	     var i= e.length;
+	     while (i--){
+	         document.createElement(e[i])
+	     } 
+	})() 
+	</script>
+</head>
+<body class="impress-not-supported">
+
+	<div class="bg"><img src="images/bg04.jpg" width="100%" /></div>
+
+	<header class="top" id="top">
+		<h1><a><img src="images/160_os_logo.png" alt="17素材"/></a><em>Love Story of Beauty & Beast</em></h1>
+		<div class="music" id="bgMusicSwitch" title="停止背景音乐">
+			<div class="triangle"></div>
+			<div class="pause pause1"></div>
+			<div class="pause pause2"></div>
+		</div>
+	</header>
+
+	<section id="timeline" class="timeline">
+		<div id="line" class="line_white"></div>
+		<div id="impress">
+			<div id="timeList">
+				<div class="step year" data-x="-600" data-y="0" data-scale ="0.5" id="0">
+					<div class="year2014">2014年</div>
+					<div class="list_show">故事的开始<br/></div>
+				</div>
+				<div class="timeList_item step" data-x="0" data-y="0" id="1">
+					<div class="circle">05/04</div>
+					<h2 class="timeList_item_title">第一张照片</h2>
+					<div class="list_show show1" >
+						<img src="pic/2014-05-04 175539.jpg" width="500">
+						<h2><a href="#">iphone的第一张照片</a></h2>
+						<p>第一张关于Yvette的照片<br/>不知道是从朋友圈还是微博爬下来的</p>
+					</div>
+				</div>
+				<div class="timeList_item step"  data-x="200" data-y="0" id="2">
+					<div class="circle">07/05</div>
+					<h2 class="timeList_item_title">女大十八变</h2>
+					<div class="list_show">
+						<img src="pic/2014-07-05 093020.jpg">
+						<h2><a href="#">女大十八变</a></h2>
+						<p class="m160">记忆中的俞越同学已经这么好看了<br/>每次在朋友圈或是微博看到关于你的消息<br/>总能想到一句歌词<br/>“最怕此生已经决心自己过没有你<br/>却又突然听到你的消息”<br/>不止一次在KTV向电话那头的你唱起<br/>不知你是否有留意</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="400" data-y="0" id="3">
+					<div class="circle">10/06</div>
+					<h2 class="timeList_item_title">再续前缘</h2>
+					<div class="list_show">
+						<img src="pic/2014-10-06 230351.jpg" width="500">
+						<h2><a href="#">再续前缘</a></h2>
+						<p>这应该是后来越越给我发的第一张照片<br/>至今也不能回想起分开多年的我们<br/>是如何又一次联系到了彼此<br/>也许真的一切都有天意</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="600" data-y="0" id="4">
+					<div class="circle">10/11</div>
+					<h2 class="timeList_item_title">唇</h2>
+					<div class="list_show show3">
+						<img src="pic/2014-10-11 234133.jpg" width="500">
+						<h2><a href="#">唇</a></h2>
+						<!--<p><img src="images/chengdu.jpg" /></p>-->
+						<p>在这之前<br/>我都不知道原来一个人的嘴唇<br/>都是这么大的诱惑</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="800" data-y="0" id="5">
+					<div class="circle">10/17</div>
+					<h2 class="timeList_item_title">下班咯！</h2>
+					<div class="list_show">
+						<img src="pic/2014-10-17 195236.jpg" width="500">
+						<h2><a href="#">下班咯！</a></h2>
+						<p>接越越下班<br/>鼓起勇气多年之后的第一次相见<br/>“连见面时的呼吸都反复的练习”</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="1000" data-y="0" id="6">
+					<div class="circle">10/18</div>
+					<h2 class="timeList_item_title">❤在一起❤</h2>
+					<div class="list_show">
+						<img src="pic/2014-10-16 180605.jpg" width="500">
+						<h2><a href="#">❤在一起❤</a></h2>
+						<p>一切都那么不真实<br/>但却真的发生了<br/>我想<br/>我又初恋了</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="1200" data-y="0" id="7">
+					<div class="circle">11/05</div>
+					<h2 class="timeList_item_title">那是谁？</h2>
+					<div class="list_show show4">
+						<img src="pic/2014-11-05 134350.jpg">
+						<h2><a href="#">那是谁？</a></h2>
+						<p><img src="pic/2014-11-06 141411.jpg" /></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="1400" data-y="0" id="8">
+					<div class="circle">11/07</div>
+					<h2 class="timeList_item_title">小手拉大手</h2>
+					<div class="list_show">
+						<img src="pic/2014-11-07 231409.jpg" width="500">
+						<h2><a href="#">小手拉大手</a></h2>
+						<p><img src="pic/2014-11-07 231412.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="1600" data-y="0" id="9">
+					<div class="circle">10/10</div>
+					<h2 class="timeList_item_title">双面夏娃</h2>
+					<div class="list_show show3">
+						<img src="pic/2014-11-10 000540.jpg" width="500">
+						<h2><a href="#">双面夏娃</a></h2>
+						<p><img src="pic/2014-11-11 223849.jpg" /></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="1800" data-y="0"  id="10">
+					<div class="circle">11/13</div>
+					<h2 class="timeList_item_title">哼哼</h2>
+					<div class="list_show">
+						<img src="pic/2014-11-13 204703.jpg" width="500">
+						<h2><a href="#">哼哼</a></h2>
+						<p ><img src="pic/2014-11-13 205158.jpg" /></p>
+					</div>
+				</div>
+				<div class="timeList_item step"  data-x="2000" data-y="0" id="11">
+					<div class="circle">11/14</div>
+					<h2 class="timeList_item_title">大红帽和小公举</h2>
+					<div class="list_show show4">
+						<img src="pic/2014-11-14 190316.jpg" width="500">
+						<h2><a href="#">大红帽和小公举</a></h2>
+						<p>一路从大学城走回家的夜晚<br/>再长的路都感觉那么的短</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="2200" data-y="0" id="12">
+					<div class="circle">11/15</div>
+					<h2 class="timeList_item_title">又没拍到！</h2>
+					<div class="list_show">
+						<img src="pic/2014-11-15 154352.jpg" width="500">
+						<h2><a href="#">又没拍到！</a></h2>
+						<p>第一次见到越越的家人？<br/>你哥唱歌真心棒~！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="2400" data-y="0" id="13">
+					<div class="circle">11/15</div>
+					<h2 class="timeList_item_title">你想干嘛？</h2>
+					<div class="list_show">
+						<img src="pic/2014-11-15 214021.png" width="500">
+						<h2><a href="#">你想干嘛？</a></h2>
+						<p>一个大写的污！<br/>真是让我把持不住啊</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="2600" data-y="0" id="14">
+					<div class="circle">11/16</div>
+					<h2 class="timeList_item_title">最美伴娘</h2>
+					<div class="list_show">
+						<img src="pic/2014-11-16 213247.jpg" width="500">
+						<h2><a href="#">最美伴娘</a></h2>
+						<p >伴娘越越的颜值应该超过了新娘吧<br/>第一次开始想象<br/>亲爱的穿上婚纱的样子<br/>肯定是全世界最美的新娘</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="2800" data-y="0" id="15">
+					<div class="circle">11/21</div>
+					<h2 class="timeList_item_title">I ❤ U</h2>
+					<div class="list_show show5">
+						<img src="pic/2014-11-21 145402.jpg" width="500">
+						<h2><a href="#">I ❤ U</a></h2>
+						<p><br/>陪你上课的时候偷偷画在了你到手臂上</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="3000" data-y="0" id="16">
+					<div class="circle">11/22</div>
+					<h2 class="timeList_item_title">北京！北京！</h2>
+					<div class="list_show">
+						<img src="pic/2014-11-22 073802.jpg" width="500">
+						<h2><a href="#">北京！北京！</a></h2>
+						<p><img src="pic/2014-11-22 134654.jpg" /></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="3200" data-y="0" id="17">
+					<div class="circle">11/22</div>
+					<h2 class="timeList_item_title">我们的第一次旅行</h2>
+					<div class="list_show">
+						<img src="pic/2014-11-22 191437.jpg" width="500">
+						<h2><a href="#">我们的第一次旅行</a></h2>
+						<p>回想起来<br/>我们的北京之行<br/>真的是一次说走就走的旅行</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="3400" data-y="0" id="18">
+					<div class="circle">11/23</div>
+					<h2 class="timeList_item_title">长城</h2>
+					<div class="list_show">
+						<img src="pic/2014-11-23 100114.jpg" width="500">
+						<h2><a href="#">长城</a></h2>
+						<p ><img src="pic/2014-11-23 100216.jpg" /></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="3600" data-y="0" id="19">
+					<div class="circle">11/24</div>
+					<h2 class="timeList_item_title">小桥 流水 越越</h2>
+					<div class="list_show show4">
+						<img src="pic/2014-11-24 120534.jpg" width="500">
+						<h2><a href="#">小桥 流水 越越</a></h2>
+						<p><img src="pic/2014-11-24 142128.jpg" /></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="3800" data-y="0" id="20">
+					<div class="circle">11/24</div>
+					<h2 class="timeList_item_title">心心相印</h2>
+					<div class="list_show show4">
+						<img src="pic/2014-11-24 142602.jpg"/>
+						<h2><a href="#">心心相印</a></h2>
+						<p >越越说过<br/>每个人的心都缺了一块<br/>而我们需要找的<br/>就是那个能补上缺口的另一伴</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="4000" data-y="0" id="21">
+					<div class="circle">11/24</div>
+					<h2 class="timeList_item_title">这一次，我绝不放手</h2>
+					<div class="list_show">
+						<img src="pic/2014-11-24 144942.jpg" width="500">
+						<h2><a href="#">这一次，我绝不放手</a></h2>
+						<p>Sorry for everything before<br/>感谢一切能重来<br/>这一次 说好了<br/>执子之手 与子偕老</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="4200" data-y="0" id="22">
+					<div class="circle">11/25</div>
+					<h2 class="timeList_item_title">我们</h2>
+					<div class="list_show show5">
+						<img src="pic/2014-12-02 171721.jpg" width="500">
+						<h2><a href="#">我们</a></h2>
+						<p><img src="pic/2014-12-02 171723.jpg" /></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="4400" data-y="0" id="23">
+					<div class="circle">11/25</div>
+					<h2 class="timeList_item_title">1！2！1！</h2>
+					<div class="list_show show5">
+						<img src="pic/2014-11-25 143135.jpg" width="500">
+						<h2><a href="#">1！2！1！</a></h2>
+						<p><img src="pic/2014-11-25 143135.jpg" /></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="4600" data-y="0" id="24">
+					<div class="circle">11/26</div>
+					<h2 class="timeList_item_title">思考者</h2>
+					<div class="list_show show5">
+						<img src="pic/2014-11-26 114925.jpg" width="500">
+						<h2><a href="#">思考者</a></h2>
+						<p><img src="pic/2014-11-26 114933.jpg" /></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="4800" data-y="0" id="25">
+					<div class="circle">11/26</div>
+					<h2 class="timeList_item_title">北京 再见</h2>
+					<div class="list_show show5">
+						<img src="pic/2014-11-26 162008.jpg" width="500">
+						<h2><a href="#">北京 再见</a></h2>
+						<p ><br/>第一次旅程结束<br/>重要的不是去哪里<br/>而是和谁一起去</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="5000" data-y="0" id="26">
+					<div class="circle">12/31</div>
+					<h2 class="timeList_item_title">Last Day in 2014</h2>
+					<div class="list_show show5">
+						<img src="pic/2014-12-31 201349.jpg" width="500">
+						<h2><a href="#">Last Day in 2014</a></h2>
+						<p><img src="pic/2014-12-31 201358.jpg" /></p>
+					</div>
+				</div>
+				<div class="step" data-x="5100" data-y="0" data-scale ="0.5" id="2015">
+					<div class="year2015"> 2015 </div>
+					<div class="list_show year"> 第一个在一起度过的完整年~ </div>
+				</div>
+				<div class="timeList_item step" data-x="6000" data-y="0" id="27">
+					<div class="circle">01/01</div>
+					<h2 class="timeList_item_title">First Day in 2015</h2>
+					<div class="list_show show5">
+						<img src="pic/2015-01-01.jpg" width="500">
+						<h2><a href="#">First Day in 2015</a></h2>
+						<p><img src="pic/2015-01-01 105223.jpg" /></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="6200" data-y="0" id="28">
+					<div class="circle">01/01</div>
+					<h2 class="timeList_item_title">2015的心愿</h2>
+					<div class="list_show show5">
+						<img src="pic/2015-01-01 105531.jpg" width="500">
+						<h2><a href="#">2015的心愿</a></h2>
+						<p><img src="pic/2015-01-01 105531.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="6400" data-y="0" id="29">
+					<div class="circle">01/01</div>
+					<h2 class="timeList_item_title">第一顿！</h2>
+					<div class="list_show show5">
+						<img src="pic/2015-01-01 2.jpg" width="500">
+						<h2><a href="#">第一顿！</a></h2>
+						<p><br/>就像阳光咖喱的名字一样<br/>新的一年也要元气满满~！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="6600" data-y="0" id="30">
+					<div class="circle">01/02</div>
+					<h2 class="timeList_item_title">My Husband？！</h2>
+					<div class="list_show show5">
+						<img src="pic/2015-01-02 091621.PNG" width="500">
+						<h2><a href="#">My Husband？！</a></h2>
+						<p><br/>2015年的第二天一大早就是<br/>Big Surprise！<br/>Morning My Wife~！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="6800" data-y="0" id="31">
+					<div class="circle">01/23</div>
+					<h2 class="timeList_item_title">娃娃机战利品</h2>
+					<div class="list_show show5">
+						<img src="pic/2015-01-23 132048.jpg" width="500">
+						<h2><a href="#">娃娃机战利品</a></h2>
+						<p><br/>人生中第一次玩娃娃机<br/>幸运女神越越让我一次就成功了~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="7000" data-y="0" id="32">
+					<div class="circle">02/10</div>
+					<h2 class="timeList_item_title">思密达</h2>
+					<div class="list_show">
+						<img src="pic/2015-02-10.jpg" class="opacity7">
+						<h2><a href="#"></a>思密达</h2>
+						<p class="m160">越越去思密达买买买啦<br/>离开几天我都想死你了</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="7200" data-y="0" id="33">
+					<div class="circle">02/14</div>
+					<h2 class="timeList_item_title">第一个情人节</h2>
+					<div class="list_show">
+						<img src="pic/2015-02-14 224444.jpg" class="opacity7">
+						<h2><a href="#">第一个情人节</a></h2>
+						<p class="m160">在一起之后的第一个情人节<br/>居然不是一起过的。哎~<br/>不过 没关系<br/>选对了人<br/>每天都是情人节</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="7400" data-y="0" id="34">
+					<div class="circle">02/18</div>
+					<h2 class="timeList_item_title">睡美人</h2>
+					<div class="list_show">
+						<img src="pic/2015-02-18 084238.jpg" class="opacity7">
+						<h2><a href="#">睡美人</a></h2>
+						<p class="m160">宝宝睡觉的样子<br/>真的很美</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="7600" data-y="0" id="35">
+					<div class="circle">03/06</div>
+					<h2 class="timeList_item_title">Firework！</h2>
+					<div class="list_show">
+						<img src="pic/2015-03-06 195409.jpg" class="opacity7">
+						<h2><a href="#">Firework！</a></h2>
+						<p class="m160">多年之前的约定<br/>说好了一起放烟火<br/>说好的事不管早晚<br/>一件件都会和越越一起做</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="7800" data-y="0" id="36">
+					<div class="circle">03/14</div>
+					<h2 class="timeList_item_title">白色情人节</h2>
+					<div class="list_show">
+						<img src="pic/2015-03-13 211933.jpg" class="opacity7">
+						<h2><a href="#">白色情人节</a></h2>
+						<p >今年我才知道为什么那时要送我这么一个礼物~原来314是白色情人节~<br/>小小的爱在大城里<br/>只为你倾心！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="8000" data-y="0" id="37">
+					<div class="circle">03/27</div>
+					<h2 class="timeList_item_title">实习的日常</h2>
+					<div class="list_show">
+						<img src="pic/2015-03-27 100934(1).jpg" class="opacity7">
+						<h2><a href="#">实习的日常</a></h2>
+						<p class="m160">陪着wuli越越去浦东跑腿<br/>回来的路上亲爱的累的睡着了</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="8200" data-y="0" id="38">
+					<div class="circle">03/27</div>
+					<h2 class="timeList_item_title">小黑</h2>
+					<div class="list_show">
+						<img src="pic/2015-03-27 122156.jpg" class="opacity7">
+						<h2><a href="#">小黑</a></h2>
+						<p >再也不怕第二个半价啦！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="8400" data-y="0" id="39">
+					<div class="circle">04/03</div>
+					<h2 class="timeList_item_title">至美三连拍</h2>
+					<div class="list_show">
+						<img src="pic/2015-04-03.jpg" class="opacity7">
+						<h2><a href="#">至美三连拍</a></h2>
+						<p >我在厦门玩<br/>越越一个人在实习<br/>美美哒三连拍<br/>每天都是小公举</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="8600" data-y="0" id="40">
+					<div class="circle">04/10</div>
+					<h2 class="timeList_item_title">毕业啦！</h2>
+					<div class="list_show">
+						<img src="pic/2015-04-10.jpg" class="opacity7">
+						<h2><a href="#">毕业啦！</a></h2>
+						<p ><img src="pic/2015-04-12.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="8800" data-y="0" id="41">
+					<div class="circle">04/20</div>
+					<h2 class="timeList_item_title">女人 猫</h2>
+					<div class="list_show">
+						<img src="pic/2015-04-20 173225.jpg" class="opacity7">
+						<h2><a href="#">女人 猫</a></h2>
+						<p >越越也是很招小动物喜欢<br/>可能天生就是吸引别人的存在吧~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="9000" data-y="0" id="42">
+					<div class="circle">04/21</div>
+					<h2 class="timeList_item_title">上课</h2>
+					<div class="list_show">
+						<img src="pic/2015-04-20.gif" class="opacity7">
+						<h2><a href="#">上课</a></h2>
+						<p >每周五都要来到上外<br/>踏着满地的梧桐叶<br/>寻觅我的伊人</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="9200" data-y="0" id="43">
+					<div class="circle">04/25</div>
+					<h2 class="timeList_item_title">这是在哪儿？</h2>
+					<div class="list_show">
+						<img src="pic/2015-04-25 142601.jpg" class="opacity7">
+						<h2><a href="#">这是在哪儿？</a></h2>
+						<p >看着背景像是全家的一张合照<br/>小鸟依人的越越</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="9400" data-y="0" id="44">
+					<div class="circle">04/26</div>
+					<h2 class="timeList_item_title">甜蜜的午后</h2>
+					<div class="list_show">
+						<img src="pic/2015-04-26.jpg" class="opacity7">
+						<h2><a href="#">甜蜜的午后</a></h2>
+						<p >安安静静的抱着<br/>甜甜蜜蜜的幸福</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="9600" data-y="0" id="45">
+					<div class="circle">05/03</div>
+					<h2 class="timeList_item_title">认真学习的越越</h2>
+					<div class="list_show">
+						<img src="pic/2015-05-03.jpg" class="opacity7">
+						<h2><a href="#">认真学习的越越</a></h2>
+						<p >艳阳天<br/>巧克力和美女<br/>更配哟</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="9800" data-y="0" id="46">
+					<div class="circle">05/05</div>
+					<h2 class="timeList_item_title">肩膀</h2>
+					<div class="list_show">
+						<img src="pic/2015-05-05 082921.jpg" class="opacity7">
+						<h2><a href="#">肩膀</a></h2>
+						<p >你是我挣扎过 放弃过 后悔过<br/>现在依然很爱很爱的人<br/>愿我的肩膀能撑起你想要的世界</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="10000" data-y="0" id="47">
+					<div class="circle">05/10</div>
+					<h2 class="timeList_item_title">母亲节</h2>
+					<div class="list_show">
+						<img src="pic/2015-05-11 075440.jpg" class="opacity7">
+						<h2><a href="#">母亲节</a></h2>
+						<p >贴心的越越给高阿姨送去了节日的祝福<br/>高妈妈也越来越喜欢你了呢~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="10200" data-y="0" id="48">
+					<div class="circle">05/18</div>
+					<h2 class="timeList_item_title">梵高</h2>
+					<div class="list_show">
+						<img src="pic/2015-05-18 140651.jpg" class="opacity7">
+						<h2><a href="#">梵高</a></h2>
+						<p >来到新天地附近<br/>一起欣赏梵高展<br/>虽然不懂画作<br/>但也能感受到艺术的熏陶</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="10400" data-y="0" id="49">
+					<div class="circle">05/21</div>
+					<h2 class="timeList_item_title">我一言你一语</h2>
+					<div class="list_show">
+						<img src="pic/2015-05-21 110342.jpg" class="opacity7">
+						<h2><a href="#">我一言你一语</a></h2>
+						<p ><img src="pic/2015-05-21 092837.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="10600" data-y="0" id="50">
+					<div class="circle">05/24</div>
+					<h2 class="timeList_item_title">星空</h2>
+					<div class="list_show">
+						<img src="pic/2015-05-24.png" class="opacity7">
+						<h2><a href="#">星空</a></h2>
+						<p >突发奇想<br/>给越越买了梵高的星空拼图<br/>拼的好辛苦啊~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="10800" data-y="0" id="51">
+					<div class="circle">06/01</div>
+					<h2 class="timeList_item_title">儿童节</h2>
+					<div class="list_show">
+						<img src="pic/2015-06-01 195148.jpg" class="opacity7">
+						<h2><a href="#">儿童节</a></h2>
+						<p >亲爱的越宝宝<br/>儿童节快乐<br/>看你吃东西真是一种享受</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="11000" data-y="0" id="52">
+					<div class="circle">06/06</div>
+					<h2 class="timeList_item_title">杭州</h2>
+					<div class="list_show">
+						<img src="pic/2015-06-06.png" class="opacity7">
+						<h2><a href="#">杭州</a></h2>
+						<p >和越越的第二次旅行<br/>杭州两日游<br/>暴走苏堤和白堤<br/>登顶飞来峰<br/>品尝东坡肉</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="11200" data-y="0" id="53">
+					<div class="circle">06/13</div>
+					<h2 class="timeList_item_title">小奶牛</h2>
+					<div class="list_show">
+						<img src="pic/2015-06-13 212807.jpg" class="opacity7">
+						<h2><a href="#">小奶牛</a></h2>
+						<p >越越送我的东西<br/>哪怕那时候分手了我也都保留着<br/>舍不得</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="11400" data-y="0" id="54">
+					<div class="circle">06/22</div>
+					<h2 class="timeList_item_title">Happy Birthday！</h2>
+					<div class="list_show">
+						<img src="pic/2015-06-21 110923.jpg" class="opacity7">
+						<h2><a href="#">Happy Birthday！</a></h2>
+						<p ><img src="pic/2015-06-22 233045.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="11600" data-y="0" id="55">
+					<div class="circle">06/26</div>
+					<h2 class="timeList_item_title">全家福</h2>
+					<div class="list_show">
+						<img src="pic/2015-06-26 181654.jpg" width="500">
+						<h2><a href="#">全家福</a></h2>
+						<p class="m160">甜美的一家人<br/>下次我也在里面啦！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="11800" data-y="0" id="56">
+					<div class="circle">07/02</div>
+					<h2 class="timeList_item_title">情侣衫</h2>
+					<div class="list_show">
+						<img src="pic/2015-07-02.png" width="500">
+						<h2><a href="#">情侣衫</a></h2>
+						<p class="m160">有点幼稚的情侣衫<br/>越越嫌弃但我还是挺喜欢哒~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="12000" data-y="0" id="57">
+					<div class="circle">06/26</div>
+					<h2 class="timeList_item_title">飞往美帝的路上</h2>
+					<div class="list_show">
+						<img src="pic/2015-07-03 134043.jpg" width="500">
+						<h2><a href="#">飞往美帝的路上</a></h2>
+						<p class="m160">越越踏上了两个月的美帝之旅<br/>迪士尼越越来啦！~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="12200" data-y="0" id="58">
+					<div class="circle">07/07</div>
+					<h2 class="timeList_item_title">美帝的第一个早晨</h2>
+					<div class="list_show">
+						<img src="pic/2015-07-07.jpg" class="opacity7">
+						<h2><a href="#">美帝的第一个早晨</a></h2>
+						<p class="m160">不知道越越美国生活的怎么样<br/>第一缕阳光照到越越嫩嫩的脸上<br/>还是能看到长途跋涉的疲惫</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="12400" data-y="0" id="59">
+					<div class="circle">07/10</div>
+					<h2 class="timeList_item_title">培训！培训！培训！</h2>
+					<div class="list_show">
+						<img src="pic/2015-07-10.jpg" class="opacity7">
+						<h2><a href="#">培训！培训！培训！</a></h2>
+						<p class="m160">Mickey越~！<br/>脸上还是能看到一点浮肿<br/>辛苦啦小公举</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="12600" data-y="0" id="60">
+					<div class="circle">07/11</div>
+					<h2 class="timeList_item_title">寄往米国的第一份信</h2>
+					<div class="list_show">
+						<img src="pic/2015-07-11 084822.jpg" class="opacity7">
+						<h2><a href="#">寄往米国的第一份信</a></h2>
+						<p class="m160">写信这个技能是越越交给我的<br/>这辈子也只会给越越一个人写信了~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="12800" data-y="0" id="61">
+					<div class="circle">07/12</div>
+					<h2 class="timeList_item_title">有起床气的睡美人</h2>
+					<div class="list_show">
+						<img src="pic/2015-07-12.jpg" class="opacity7">
+						<h2><a href="#">有起床气的睡美人</a></h2>
+						<p class="m160">宝宝的起床气 <br/>
+						好想抱抱你<br/>亲亲宝宝</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="13000" data-y="0" id="62">
+					<div class="circle">07/13</div>
+					<h2 class="timeList_item_title">需要有人陪才能入睡的乖宝宝</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5393.jpg" class="opacity7">
+						<h2><a href="#">需要有人陪才能入睡的乖宝宝</a></h2>
+						<p class="m160">于是实习的日常变成了我上班你下班<br/>每天到公司第一件事就是哄宝宝睡觉</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="13200" data-y="0" id="63">
+					<div class="circle">07/18</div>
+					<h2 class="timeList_item_title">某个呓语的夜晚</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5520.jpg" class="opacity7">
+						<h2><a href="#">某个呓语的夜晚</a></h2>
+						<p><img src="pic/IMG_5523.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="13400" data-y="0" id="64">
+					<div class="circle">07/19</div>
+					<h2 class="timeList_item_title">羞涩的马赛克</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5438.jpg" class="opacity7">
+						<h2><a href="#">羞涩的马赛克</a></h2>
+						<p class="m160">第一次穿上工作装 <br/>比想象中的好看多啦<br/>毕竟越越是个衣架子~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="13600" data-y="0" id="65">
+					<div class="circle">07/22</div>
+					<h2 class="timeList_item_title">有点肿的Q越越</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5468.jpg" class="opacity7">
+						<h2><a href="#">有点肿的Q越越</a></h2>
+						<p ><img src="pic/IMG_5471.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="13800" data-y="0" id="66">
+					<div class="circle">07/24</div>
+					<h2 class="timeList_item_title">制服诱惑~</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5478.jpg" class="opacity7">
+						<h2><a href="#">制服诱惑~</a></h2>
+						<p class="m160">没有不好看的衣服<br/>只有把衣服穿不好看的人<br/>剪刀手越越~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="14000" data-y="0" id="67">
+					<div class="circle">07/25</div>
+					<h2 class="timeList_item_title">短短的小舌头</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5494.jpg" class="opacity7">
+						<h2><a href="#">短短的小舌头</a></h2>
+						<p class="m160">吐吐小舌头<br/>谁是世界上最可爱的人</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="14200" data-y="0" id="68">
+					<div class="circle">07/28</div>
+					<h2 class="timeList_item_title">史迪仔小伙伴</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5533.jpg" class="opacity7">
+						<h2><a href="#">史迪仔小伙伴</a></h2>
+						<p class="m160">在美国的好多夜晚<br/>都是史迪仔陪越越度过的<br/>也可以算是我的一个小化身吧！~<br/>嘿嘿</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="14400" data-y="0" id="69">
+					<div class="circle">07/29</div>
+					<h2 class="timeList_item_title">宝宝梦到了吮指原味鸡</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5547.jpg" class="opacity7">
+						<h2><a href="#">宝宝梦到了吮指原味鸡</a></h2>
+						<p> <img src="pic/IMG_5544.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="14600" data-y="0" id="70">
+					<div class="circle">07/31</div>
+					<h2 class="timeList_item_title">有事上奏无事睡觉！</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5559.jpg" class="opacity7">
+						<h2><a href="#">有事上奏无事睡觉！</a></h2>
+						<p class="m160">一大早就这么高冷范儿~<br/>又是起床气在作祟嘛</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="14800" data-y="0" id="71">
+					<div class="circle">08/01</div>
+					<h2 class="timeList_item_title">高能预警！</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5561.jpg" class="opacity7">
+						<h2><a href="#">高能预警！</a></h2>
+						<p ><img src="pic/IMG_5562.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="15000" data-y="0" id="72">
+					<div class="circle">08/01</div>
+					<h2 class="timeList_item_title">鼻屎君！</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5578.gif" class="opacity7">
+						<h2><a href="#">鼻屎君！</a></h2>
+						<p class="m160">你是在学德国主帅勒夫么:)</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="15200" data-y="0" id="73">
+					<div class="circle">08/01</div>
+					<h2 class="timeList_item_title">吃货君</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5584.gif" class="opacity7">
+						<h2><a href="#">吃货君</a></h2>
+						<p class="m160">说好的淑女呢~哈哈哈<br/>要优雅 不要污~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="15400" data-y="0" id="74">
+					<div class="circle">08/01</div>
+					<h2 class="timeList_item_title">Pin的收集者！</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5628.jpg" class="opacity7">
+						<h2><a href="#">Pin的收集者！</a></h2>
+						<p class="m160">越越的小嗜好~<br/>偷偷拿回来了多少呀~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="15600" data-y="0" id="75">
+					<div class="circle">08/01</div>
+					<h2 class="timeList_item_title">美若天仙</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5630.jpg" class="opacity7">
+						<h2><a href="#">美若天仙</a></h2>
+						<p> <img src="pic/IMG_5631.jpg" ></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="15800" data-y="0" id="76">
+					<div class="circle">08/02</div>
+					<h2 class="timeList_item_title">俏皮可爱</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5625.jpg" class="opacity7">
+						<h2><a href="#">俏皮可爱</a></h2>
+						<p><img src="pic/IMG_5634.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="16000" data-y="0" id="77">
+					<div class="circle">08/02</div>
+					<h2 class="timeList_item_title">安然入睡</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5636.jpg" class="opacity7">
+						<h2><a href="#">安然入睡</a></h2>
+						<p><img src="pic/IMG_5641.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="16200" data-y="0" id="78">
+					<div class="circle">08/04</div>
+					<h2 class="timeList_item_title">挑戒指啦</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5660.jpg" class="opacity7">
+						<h2><a href="#">挑戒指啦</a></h2>
+						<p>很久以前就想和越越一起带戒指<br/>现在总算有能力实现这个愿望啦<br/>买戒指的时候充满了幸福感呢<br/>越越平时也要多带呀</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="16400" data-y="0" id="79">
+					<div class="circle">08/06</div>
+					<h2 class="timeList_item_title">迷幻的花仙子</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5673.jpg" class="opacity7">
+						<h2><a href="#">迷幻的花仙子</a></h2>
+						<p><img src="pic/IMG_5670.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="16600" data-y="0" id="80">
+					<div class="circle">08/08</div>
+					<h2 class="timeList_item_title">表情秀</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5693.png" class="opacity7">
+						<h2><a href="#">表情秀</a></h2>
+						<p class="m160">是时候给越越做个专属表情包啦<br/>各种Q各种萌各种逗各种美</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="16800" data-y="0" id="81">
+					<div class="circle">08/10</div>
+					<h2 class="timeList_item_title">越越的小蛮腰~</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5744.jpg" class="opacity7">
+						<h2><a href="#">看看！<br/>这小蛮腰！<br/>越越的身材真的很棒啊</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="17000" data-y="0" id="82">
+					<div class="circle">08/10</div>
+					<h2 class="timeList_item_title">笑颜如花</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5769.jpg" class="opacity7">
+						<h2><a href="#">笑颜如花</a></h2>
+						<p class="m160">什么新垣结衣<br/>越越的微笑才是我见过的这世界上最最治愈的笑容</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="17200" data-y="0" id="83">
+					<div class="circle">08/12</div>
+					<h2 class="timeList_item_title">黑暗中柔美的轮廓</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5780.jpg" class="opacity7">
+						<h2><a href="#">黑暗中柔美的轮廓</a></h2>
+						<p class="m160">越越在大洋彼岸的两个多月<br/>可能见过最多的就是黑暗中你的轮廓<br/>在屏幕这头静静地听着你的呼吸<br/>看你安然入睡也是一种幸福</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="17400" data-y="0" id="84">
+					<div class="circle">08/13</div>
+					<h2 class="timeList_item_title">面朝大海 春暖花开</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5789.jpg" class="opacity7">
+						<h2><a href="#">面朝大海 春暖花开</a></h2>
+						<p><img src="pic/IMG_5837.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="17600" data-y="0" id="85">
+					<div class="circle">08/14</div>
+					<h2 class="timeList_item_title">bling！bling！bling！</h2>
+					<div class="list_show">
+						<img src="pic/IMG_5835.jpg" class="opacity7">
+						<h2><a href="#">戒指</a></h2>
+						<p class="m160">刻有 Beauty & Beast 的戒指<br/>只为记录下属于我们的美丽童话</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="17800" data-y="0" id="86">
+					<div class="circle">08/27</div>
+					<h2 class="timeList_item_title">美国的旅行</h2>
+					<div class="list_show">
+						<img src="pic/2015-08-27 113715.jpg" class="opacity7">
+						<h2><a href="#">美国的旅行</a></h2>
+						<p ><img src="pic/2015-08-27 113712.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="18000" data-y="0" id="87">
+					<div class="circle">08/29</div>
+					<h2 class="timeList_item_title">日夜颠倒</h2>
+					<div class="list_show">
+						<img src="pic/2015-08-29.png" class="opacity7">
+						<h2><a href="#">日夜颠倒</a></h2>
+						<p ><img src="pic/2015-08-30.png"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="18200" data-y="0" id="88">
+					<div class="circle">09/01</div>
+					<h2 class="timeList_item_title">试衣秀</h2>
+					<div class="list_show">
+						<img src="pic/2015-09-01 091956.jpg" class="opacity7">
+						<h2><a href="#">试衣秀</a></h2>
+						<p ><img src="pic/2015-09-01 092015.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="18400" data-y="0" id="89">
+					<div class="circle">09/02</div>
+					<h2 class="timeList_item_title">告别演出</h2>
+					<div class="list_show">
+						<img src="pic/2015-09-02.png" class="opacity7">
+						<h2><a href="#">告别演出</a></h2>
+						<p ><img src="pic/2015-09-03.png"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="18600" data-y="0" id="90">
+					<div class="circle">09/05</div>
+					<h2 class="timeList_item_title">卡哇伊越</h2>
+					<div class="list_show">
+						<img src="pic/2015-09-05.gif" class="opacity7">
+						<h2><a href="#">卡哇伊越</a></h2>
+						<p class="m160">元气满满的越越<br/>回到我身边的日子开始倒数咯！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="18800" data-y="0" id="91">
+					<div class="circle">09/07</div>
+					<h2 class="timeList_item_title">么么哒</h2>
+					<div class="list_show">
+						<img src="pic/2015-09-07 074042.jpg" class="opacity7">
+						<h2><a href="#">么么哒</a></h2>
+						<p class="m160">我知道~<br/>这是千里传吻！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="19000" data-y="0" id="92">
+					<div class="circle">09/12</div>
+					<h2 class="timeList_item_title">好想你</h2>
+					<div class="list_show">
+						<img src="pic/2015-09-12 000328.png" class="opacity7">
+						<h2><a href="#">好想你</a></h2>
+						<p class="m160">好想你。好想你。真的好想你。<br/>才刚在一起8个月你就离开了2个多月<br/>思念绵延不绝</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="19200" data-y="0" id="93">
+					<div class="circle">09/12</div>
+					<h2 class="timeList_item_title">归来</h2>
+					<div class="list_show">
+						<img src="pic/2015-09-12 000256.png" class="opacity7">
+						<h2><a href="#">好想你</a></h2>
+						<p class="m160">盼望着盼望着<br/>一天一天的倒数总算到了尽头<br/>70个日夜每一分每一秒都是煎熬</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="19400" data-y="0" id="94">
+					<div class="circle">09/13</div>
+					<h2 class="timeList_item_title">花与Yvette</h2>
+					<div class="list_show">
+						<img src="pic/2015-09-14 081947.jpg" class="opacity7">
+						<h2><a href="#">花与Yvette</a></h2>
+						<p class="m160">欢迎回家~<br/>也是第一次带着鲜花接机呢<br/>下次就捧着花到接机口等你啦~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="19600" data-y="0" id="95">
+					<div class="circle">10/02</div>
+					<h2 class="timeList_item_title">古松半日游</h2>
+					<div class="list_show">
+						<img src="pic/2015-10-02 123218.jpg" class="opacity7">
+						<h2><a href="#">古松半日游</a></h2>
+						<p class="m160">带越越来到了古松<br/>感受田园的气息<br/>也乘着渡船过了江<br/>如果可以下次要晚上来<br/>真的能看见漫天的繁星</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="19800" data-y="0" id="96">
+					<div class="circle">10/03</div>
+					<h2 class="timeList_item_title">吉祥三宝</h2>
+					<div class="list_show">
+						<img src="pic/2015-10-03 095926.jpg" class="opacity7">
+						<h2><a href="#">吉祥三宝</a></h2>
+						<p class="m160">驱车前往太湖边上吃大闸蟹<br/>越越一如既往的灵活躲避镜头~<br/>但是这一次<br/>戒指更加抢镜！<br/>Shining bright like a diamond</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="20000" data-y="0" id="97">
+					<div class="circle">10/03</div>
+					<h2 class="timeList_item_title">合照来啦</h2>
+					<div class="list_show">
+						<img src="pic/2015-10-03 111045.jpg" class="opacity7">
+						<h2><a href="#">合照来啦</a></h2>
+						<p ><img src="pic/2015-10-03 220849.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="20200" data-y="0" id="98">
+					<div class="circle">10/18</div>
+					<h2 class="timeList_item_title">King的十二道王味</h2>
+					<div class="list_show">
+						<img src="pic/2015-10-18 115924.jpg" class="opacity7">
+						<h2><a href="#">King的十二道王味</a></h2>
+						<p ><img src="pic/2015-10-18 124306.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="20400" data-y="0" id="99">
+					<div class="circle">10/31</div>
+					<h2 class="timeList_item_title">壁咚！</h2>
+					<div class="list_show">
+						<img src="pic/2015-10-31 223725.jpg" class="opacity7">
+						<h2><a href="#">壁咚！</a></h2>
+						<p ><img src="pic/2015-10-31 223728.jpg" ></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="20600" data-y="0" id="100">
+					<div class="circle">11/13</div>
+					<h2 class="timeList_item_title">西安！西安！</h2>
+					<div class="list_show">
+						<img src="pic/2015-11-13 181959.jpg" class="opacity7">
+						<h2><a href="#">西安！西安！</a></h2>
+						<p ><img src="pic/2015-11-13 165433.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="20800" data-y="0" id="101">
+					<div class="circle">11/14</div>
+					<h2 class="timeList_item_title">华清池</h2>
+					<div class="list_show">
+						<img src="pic/2015-11-14 101006.jpg" class="opacity7">
+						<h2><a href="#">华清池</a></h2>
+						<p class="m160">西安第二天<br/>距离上一次去北京<br/>马上就满一年啦<br/>我们依然在路上~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="21000" data-y="0" id="102">
+					<div class="circle">11/14</div>
+					<h2 class="timeList_item_title">又一波合照~</h2>
+					<div class="list_show">
+						<img src="pic/2015-11-142.png" class="opacity7">
+						<h2><a href="#">又一波合照~</a></h2>
+						<p><img src="pic/2015-11-14.png"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="21200" data-y="0" id="103">
+					<div class="circle">11/14</div>
+					<h2 class="timeList_item_title">合照不能停</h2>
+					<div class="list_show">
+						<img src="pic/2015-11-14 130240.jpg" class="opacity7">
+						<h2><a href="#">合照不能停</a></h2>
+						<p><img src="pic/2015-11-14 130930.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="21400" data-y="0" id="104">
+					<div class="circle">11/15</div>
+					<h2 class="timeList_item_title">大雁塔</h2>
+					<div class="list_show">
+						<img src="pic/2015-11-15 142745.jpg" class="opacity7">
+						<h2><a href="#">大雁塔</a></h2>
+						<p><img src="pic/2015-11-15 180700.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="21600" data-y="0" id="105">
+					<div class="circle">11/16</div>
+					<h2 class="timeList_item_title">一吻定情</h2>
+					<div class="list_show">
+						<img src="pic/2015-11-16 110200.jpg" class="opacity7">
+						<h2><a href="#">一吻定情</a></h2>
+						<p class="m160">在十朝古都的城楼上<br/>留下跨越千年的一吻~<br/>爱你一万年</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="21800" data-y="0" id="106">
+					<div class="circle">11/27</div>
+					<h2 class="timeList_item_title">约定的第一次</h2>
+					<div class="list_show">
+						<img src="pic/2015-11-27 153215.png" class="opacity7">
+						<h2><a href="#">约定的第一次</a></h2>
+						<p class="m160">约定的第一次<br/>约定的第二次<br/>约定的第X次<br/>随缘吧。。</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="22000" data-y="0" id="107">
+					<div class="circle">12/12</div>
+					<h2 class="timeList_item_title">姐姐结婚啦</h2>
+					<div class="list_show">
+						<img src="pic/2015-12-12 153420.jpg" class="opacity7">
+						<h2><a href="#">姐姐结婚啦</a></h2>
+						<p class="m160">越越依旧美美哒<br/>我也还凑活吧~<br/>什么时候自己结婚呢？</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="22200" data-y="0" id="108">
+					<div class="circle">12/24</div>
+					<h2 class="timeList_item_title">小越越的圣诞夜</h2>
+					<div class="list_show">
+						<img src="pic/2015-12-24 202650.jpg" class="opacity7">
+						<h2><a href="#">小越越的圣诞夜</a></h2>
+						<p ><img src="pic/2015-12-24 212008.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="22400" data-y="0" id="109">
+					<div class="circle">12/30</div>
+					<h2 class="timeList_item_title">越越的表情show</h2>
+					<div class="list_show">
+						<img src="pic/2015-12-30.gif" class="opacity7">
+						<h2><a href="#">越越的表情show</a></h2>
+						<p><img src="pic/2015-12-302.gif"></p>
+					</div>
+				</div>
+				<div class="step" data-x="22500" data-y="0" data-scale ="0.5" id="2016">
+					<div class="year2016"> 2016 </div>
+					<div class="list_show year"> 转瞬之间一年又过去了~ </div>
+				</div>
+				<div class="timeList_item step" data-x="23000" data-y="0" id="110">
+					<div class="circle">01/01</div>
+					<h2 class="timeList_item_title">新年第一眼</h2>
+					<div class="list_show">
+						<img src="pic/2016-01-01 100913.png" class="opacity7">
+						<h2><a href="#">新年第一眼</a></h2>
+						<p class="m160">2016年睁眼的看到的第一个人就是我<br/>Happy New Year Yvette！~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="23200" data-y="0" id="111">
+					<div class="circle">01/22</div>
+					<h2 class="timeList_item_title">睡睡睡</h2>
+					<div class="list_show">
+						<img src="pic/2016-01-20 124206.jpg" class="opacity7">
+						<h2><a href="#">睡睡睡</a></h2>
+						<p ><img src="pic/2016-01-22 143455.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="23400" data-y="0" id="112">
+					<div class="circle">02/15</div>
+					<h2 class="timeList_item_title">蜘蛛侠来啦</h2>
+					<div class="list_show">
+						<img src="pic/2016-02-15 131316.jpg" class="opacity7">
+						<h2><a href="#">蜘蛛侠来啦</a></h2>
+						<p class="m160">来到了传说中的倒置屋<br/>此刻的越越就是超级英雄！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="23600" data-y="0" id="113">
+					<div class="circle">03/05</div>
+					<h2 class="timeList_item_title">萌妹子</h2>
+					<div class="list_show">
+						<img src="pic/2016-02-29 231104.jpg" class="opacity7">
+						<h2><a href="#">萌妹子</a></h2>
+						<p><img src="pic/2016-03-05 115119.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="23800" data-y="0" id="114">
+					<div class="circle">03/13</div>
+					<h2 class="timeList_item_title">霓虹！霓虹！</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-13 080441.jpg" class="opacity7">
+						<h2><a href="#">霓虹！霓虹！</a></h2>
+						<p class="m160">人生中第一次出境游<br/>幸得佳人相伴<br/>愿还有无数的第一次与越越共同创造~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="24000" data-y="0" id="115">
+					<div class="circle">03/13</div>
+					<h2 class="timeList_item_title">铁胆火车侠</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-13 122827.jpg" class="opacity7">
+						<h2><a href="#">铁胆火车侠</a></h2>
+						<p class="m160">日本的铁路交通真是复杂<br/>攻略做的头疼<br/>亲眼看到的时候突然明白了<br/>铁胆火车侠从何而来</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="24200" data-y="0" id="116">
+					<div class="circle">03/13</div>
+					<h2 class="timeList_item_title">吃吃吃！</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-14.png" class="opacity7">
+						<h2><a href="#">吃吃吃！</a></h2>
+						<p class="m160">霓虹的美食让越越欲罢不能~<br/></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="24500" data-y="0" id="117">
+					<div class="circle">03/14</div>
+					<h2 class="timeList_item_title">买买买！</h2>
+					<div class="list_show">
+						<img src="pic/2016-3-14.png" class="opacity7">
+						<h2><a href="#">买买买！</a></h2>
+						<p class="m160"><img src="pic/2016-3-142.png"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="24800" data-y="0" id="118">
+					<div class="circle">03/14</div>
+					<h2 class="timeList_item_title">小红帽累啦</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-15 195216.jpg" class="opacity7">
+						<h2><a href="#">小红帽累啦</a></h2>
+						<p class="m160">买买买的日子也是很累的<br/>小红帽找到机会就坐下<br/>这也是越越可爱的原因~</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="25000" data-y="0" id="119">
+					<div class="circle">03/15</div>
+					<h2 class="timeList_item_title">小鹿斑比</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-15 094059.jpg" class="opacity7">
+						<h2><a href="#">小鹿斑比</a></h2>
+						<p class="m160">奈良的鹿刷新了我对于鹿的认知<br/>原本以为优雅可爱的鹿<br/>居然一个个都是大吃货<br/>盯着越越要吃的</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="25200" data-y="0" id="120">
+					<div class="circle">03/15</div>
+					<h2 class="timeList_item_title">花前越下</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-15 120805.jpg" class="opacity7">
+						<h2><a href="#">花前越下</a></h2>
+						<p class="m160">sakura！<br/>没有赶上樱花盛开的季节<br/>或许是邀请我们下次再去霓虹观赏吧<br/></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="25400" data-y="0" id="121">
+					<div class="circle">03/16</div>
+					<h2 class="timeList_item_title">鸟居</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-16 114543.jpg" class="opacity7">
+						<h2><a href="#">鸟居</a></h2>
+						<p class="m160">环环相扣的鸟居<br/>百转千回<br/>仿佛一条没有镜头的时空隧道<br/>虽然不知尽头是哪里<br/>但我们知道该牵着谁的手</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="25600" data-y="0" id="122">
+					<div class="circle">03/16</div>
+					<h2 class="timeList_item_title">明信片</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-15 140240.jpg" class="opacity7">
+						<h2><a href="#">明信片</a></h2>
+						<p ><img src="pic/2016-03-16 134241.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="25800" data-y="0" id="123">
+					<div class="circle">03/16</div>
+					<h2 class="timeList_item_title">清水寺</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-16 144703.jpg" class="opacity7">
+						<h2><a href="#">清水寺</a></h2>
+						<p class="m160">某些人告诉我这是世界八大奇迹之一<br/>天真的我居然相信了<br/>吓了我一大跳！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="26000" data-y="0" id="124">
+					<div class="circle">03/17</div>
+					<h2 class="timeList_item_title">大阪天守阁</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-17 105039.jpg" class="opacity7">
+						<h2><a href="#">大阪天守阁</a></h2>
+						<p><img src="pic/2016-03-17 123040.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="26200" data-y="0" id="125">
+					<div class="circle">03/17</div>
+					<h2 class="timeList_item_title">武士乐与和服越</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-17 121638.jpg" class="opacity7">
+						<h2><a href="#">武士乐与和服越</a></h2>
+						<p><img src="pic/2016-03-17 121654.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="26400" data-y="0" id="126">
+					<div class="circle">03/18</div>
+					<h2 class="timeList_item_title">再见啦！霓虹~</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-18 042531.jpg" class="opacity7">
+						<h2><a href="#">再见啦！霓虹~</a></h2>
+						<p class="m160">后会暂无期 相聚终有时<br/>美好的时光总会划上句号<br/>但我们的故事远远没有结束</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="26600" data-y="0" id="127">
+					<div class="circle">03/27</div>
+					<h2 class="timeList_item_title">独角戏</h2>
+					<div class="list_show">
+						<img src="pic/2016-03-27.png" class="opacity7">
+						<h2><a href="#">独角戏</a></h2>
+						<p class="m160">这组照片我收到的时候被震撼到了<br/>总有种年度大片的既视感<br/>放到电影海报上也绝不会逊色<br/>充满了范儿！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="26800" data-y="0" id="128">
+					<div class="circle">05/01</div>
+					<h2 class="timeList_item_title">辰山植物园</h2>
+					<div class="list_show">
+						<img src="pic/2016-05-01 103910.jpg" class="opacity7">
+						<h2><a href="#">辰山植物园</a></h2>
+						<p><img src="pic/2016-05-01 110419.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="27000" data-y="0" id="129">
+					<div class="circle">05/06</div>
+					<h2 class="timeList_item_title">窈窕淑女</h2>
+					<div class="list_show">
+						<img src="pic/2016-05-06.png" class="opacity7">
+						<h2><a href="#">窈窕淑女</a></h2>
+						<p class="m160">OMG!<br/>不吹不黑<br/>这身材不是超模是什么？</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="27200" data-y="0" id="130">
+					<div class="circle">05/12</div>
+					<h2 class="timeList_item_title">爱巢</h2>
+					<div class="list_show">
+						<img src="pic/2016-05-22 140325.jpg" class="opacity7">
+						<h2><a href="#">爱巢</a></h2>
+						<p >要开始装修啦<br/>需要好好想一想以后的爱巢<br/>真是复杂却又激动<br/></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="27400" data-y="0" id="131">
+					<div class="circle">05/22</div>
+					<h2 class="timeList_item_title">倒数一个月！</h2>
+					<div class="list_show">
+						<img src="pic/2016-05-23 174909.jpg" class="opacity7">
+						<h2><a href="#">倒数一个月！</a></h2>
+						<p >让我们一起倒数~<br/>越越期待已久的生日要来啦！</p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="27600" data-y="0" id="132">
+					<div class="circle">06/21</div>
+					<h2 class="timeList_item_title">考试周的生日~</h2>
+					<div class="list_show">
+						<img src="pic/2016-06-21 180340.jpg" class="opacity7">
+						<h2><a href="#">考试周的生日~</a></h2>
+						<p class="m160"><img src="pic/2016-06-21 184817.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="27800" data-y="0" id="133">
+					<div class="circle">06/22</div>
+					<h2 class="timeList_item_title">Happy Birthday！</h2>
+					<div class="list_show">
+						<img src="pic/0cab74d6b78022e0a975b827c81b8104.gif" class="opacity7">
+						<h2><a href="#">Happy Birthday！</a></h2>
+						<p class="m160"><img src="pic/bcf5ccc86f8dbd20f119e38069b38083.gif"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="28000" data-y="0" id="134">
+					<div class="circle"></div>
+					<h2 class="timeList_item_title">To be continued!~</h2>
+					<div class="list_show">
+						<img src="pic/ciyun1.jpg" class="opacity7">
+						<h2><a href="#">To be continued!~</a></h2>
+						<p >属于我们的故事才刚开始<br/>幸福不停<br/>未完待续</p>
+					</div>
+				</div>
+				<!--
+				
+				<div class="timeList_item step" data-x="27600" data-y="0" id="">
+					<div class="circle"></div>
+					<h2 class="timeList_item_title"></h2>
+					<div class="list_show">
+						<img src="pic/.jpg" class="opacity7">
+						<h2><a href="#"></a></h2>
+						<p class="m160"><img src="pic/.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="27800" data-y="0" id="">
+					<div class="circle"></div>
+					<h2 class="timeList_item_title"></h2>
+					<div class="list_show">
+						<img src="pic/.jpg" class="opacity7">
+						<h2><a href="#"></a></h2>
+						<p class="m160"><img src="pic/.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="28000" data-y="0" id="">
+					<div class="circle"></div>
+					<h2 class="timeList_item_title"></h2>
+					<div class="list_show">
+						<img src="pic/.jpg" class="opacity7">
+						<h2><a href="#"></a></h2>
+						<p class="m160"><img src="pic/.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="28200" data-y="0" id="">
+					<div class="circle"></div>
+					<h2 class="timeList_item_title"></h2>
+					<div class="list_show">
+						<img src="pic/.jpg" class="opacity7">
+						<h2><a href="#"></a></h2>
+						<p class="m160"><img src="pic/.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="28400" data-y="0" id="">
+					<div class="circle"></div>
+					<h2 class="timeList_item_title"></h2>
+					<div class="list_show">
+						<img src="pic/.jpg" class="opacity7">
+						<h2><a href="#"></a></h2>
+						<p class="m160"><img src="pic/.jpg"></p>
+					</div>
+				</div>
+				<div class="timeList_item step" data-x="28600" data-y="0" id="">
+					<div class="circle"></div>
+					<h2 class="timeList_item_title"></h2>
+					<div class="list_show">
+						<img src="pic/.jpg" class="opacity7">
+						<h2><a href="#"></a></h2>
+						<p class="m160"><img src="pic/.jpg"></p>
+					</div>
+				</div>
+				
+				<div class="timeList_item step" data-x="28800" data-y="0" id="">
+					<div class="circle"></div>
+					<h2 class="timeList_item_title"></h2>
+					<div class="list_show">
+						<img src="pic/.jpg" class="opacity7">
+						<h2><a href="#"></a></h2>
+						<p class="m160"><img src="pic/.jpg"></p>
+					</div>
+				</div>
+
+				<div class="timeList_item step refresh" data-x="5000" data-y="0" id="25">
+					<div class="list_show">
+						<a href='javascript:replay();'><img src="images/refress.png"/></a>
+						<p class="end">OSC 的发展离不开您的支持！2013，我们会更加努力！</p>
+					</div>
+				</div>
+			-->
+			</div>
+		</div>
+	</section>
+	<div class="gotop"> <a href="#top"><img src="images/top.png" title="回顶部"/></a></div>
+
+	<script type="text/javascript" src="js/impress.js"></script>
+
+</body>
+</html>
+
+<script>var impress = $.browser.msie?undefined:impress();
+
+//预加载图片
+new Image().src = "images/bg04.jpg";
+new Image().src = "images/bg01.jpg";
+new Image().src = "images/bg02.jpg";
+new Image().src = "images/bg03.jpg";
+
+var replay = function(){
+	if(impress){
+		impress.goto($("#0")[0]);
+	}else{
+		location.reload();
+	}
+};
+
+
+var event_cache = null;
+
+var loop = true,timing=null;
+
+$(function(){			
+	
+	 $(window).bind('scroll resize',function(){
+        if($(window).scrollTop() >= 1)
+            $('.gotop').css('display','block');
+        else
+            $('.gotop').css('display','none');
+    });   
+	
+	var cache_event_top = function(){
+		if(event_cache!=null)
+			return;
+		event_cache = new Array(24);
+		var i = 0;
+		var length = event_cache.length;
+		for(;i<length;i++){
+			var id = i+1;
+			event_cache[i] = $("#"+id).position().top;
+		}
+	}
+		
+	var resize = function(){
+		
+		var width = $(window).width();
+		var height = $(window).height();
+		$(".bg img").css("width",width);
+		$(".bg img").css("height",height);
+		
+	};
+		
+	var cur_month = 2;
+
+	var getMonthByTop = function(top){
+		for(var i=0,event=event_cache[i];i<event_cache.length;i++){
+				if(i==event_cache.length-1 && top>=event || top>=event && top<event_cache[i+1]){
+					var date = $("#"+(i+1)).find(".circle").html();
+					if(date){
+						var month = +date.split("/")[0];
+						return month;
+					}
+				}
+		}
+		return cur_month;
+	};
+		
+	var scroll = function(){
+		if($.browser.msie){
+			cache_event_top();
+			var st = $(window).scrollTop();
+			var month = getMonthByTop(st);
+			if(month!=cur_month){
+				changeBackground(month);
+				cur_month = month;
+			}
+		}
+	};
+	
+	resize();
+	
+	$(window).resize(function(){
+		resize();
+	});
+	
+	$(window).scroll(function(){
+		scroll();
+	});
+	
+	$(".circle").click(function(){
+			loop = false;
+		if(timing)
+			clearInterval(timing);
+	});
+	$(".refresh img").click(function(){
+		loop = true;
+		$(".refresh img").addClass("rotate45");
+		setTimeout(function(){
+			$(".refresh img").removeClass("rotate45");
+		},2000);	
+	});
+	if(!$.browser.msie){
+		if($.browser.safari)
+			bgMusic = new Audio('music/music.mp3');
+		else
+			bgMusic = new Audio('music/music.ogg');
+		bgMusic.loop = true;
+		bgMusic.volume = 0.7;
+		$('#bgMusicSwitch').click(function(){
+			if(bgMusic.paused){
+				bgMusic.play();
+				$(".triangle").css("display","none");
+				$(".pause").css("display","block");
+				$("#bgMusicSwitch").attr("title","暂停背景音乐");
+			}else{
+				bgMusic.pause();
+				$(".pause").css("display","none");
+				$(".triangle").css("display","block");
+				$("#bgMusicSwitch").attr("title","播放背景音乐");
+			}});
+		var bgSwitch = function(){
+			$('#bgMusicSwitch').trigger('click');
+		}
+				
+		bgSwitch();
+	}else{
+		$(".music").hide();
+	}		
+	
+});
+
+
+if(impress)impress.init();
+
+var last_month = 4;
+
+var changeBackground = function(month){
+	var body = $("body");
+	var url = "";
+	if(month == 12 || month == 1 || month==2){
+		if(last_month==4)
+			return;
+		last_month = 4;
+		url = "images/bg04.jpg";
+		$("header").css("background-color","rgba(255,255,255,0.2)");
+		$(".impress-supported .list_show h2").css("color","#0087f1");
+		$(".impress-not-supported .timeList_item_title").css("color","#0087f1");
+	}else if(month>=3 && month<=5){
+		if(last_month==1)
+			return;
+		last_month = 1;
+		url = "images/bg01.jpg";
+		$("header").css("background-color","rgba(255,255,255,0.2)");
+		$(".impress-supported .list_show h2").css("color","#fff");
+		$(".impress-not-supported .timeList_item_title").css("color","#eca200");
+	}else if(month>=6 && month<=8){
+		if(last_month==2)
+			return;
+		last_month = 2;
+		url = "images/bg02.jpg";
+		$("header").css("background-color","rgba(0,0,0,0.2)");
+		$(".impress-supported .list_show h2").css("color","#82e211");
+		$(".impress-not-supported .timeList_item_title").css("color","#82e211");
+	}else{
+		if(last_month==3)
+			return;
+		last_month = 3;
+		url = "images/bg03.jpg";
+		$("header").css("background-color","rgba(255,255,255,0.2)");
+		$(".impress-supported .list_show h2").css("color","#ffca00");
+		$(".impress-not-supported .timeList_item_title").css("color","#ffca00");
+	}
+	$(".bg img").attr("src",url);
+};
+
+if(!$.browser.msie){
+	document.addEventListener('impress:stepenter', function(e){
+		var cur = arguments[0].target;
+		var date = $(cur).find(".circle").html();
+		if(date){
+			var month = +date.split("/")[0];
+			changeBackground(month);
+		}
+		if(!loop)
+			return;
+		if (typeof timing !== 'undefined') clearInterval(timing);
+		var duration = 5000;
+		timing = setInterval(function(){
+			var dom = impress.next();
+			var id = +$(dom).attr("id");
+			if(id==129){
+				clearInterval(timing);
+				loop = false;
+			}
+		}, duration);
+	});
+}
+</script>
